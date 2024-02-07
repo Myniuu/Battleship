@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Protest Strike', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    line-height: 200px;
+    font-size: 100px;
+    text-align: center;
+    border-bottom: solid 2px white;
+    box-sizing: border-box;
+}
+
+main {
+    width: 60vw;
+}
+
+main .game-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.board {
+    margin-top: 30px;
+}
+
+.board h2 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 1px;
+}
+
+.grid div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.game-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#game-status {
+    margin-top: 20px;
+    font-size: 32px;
+    border: 1px solid #333;
+}
+
