@@ -4,12 +4,11 @@ export default class Ship {
     this.hits = [];
   }
 
-  hit(hitPoint) {
-    this.hits.push(hitPoint);
-    return this.hits;
+  hit(point) {
+    return this.hits.push(point);
   }
 
   isSunk() {
-    return this.hits.length >= this.length;
+    return this.hits.length === this.length;
   }
 }
